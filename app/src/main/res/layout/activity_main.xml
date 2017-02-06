@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_weight="1.5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="#66aada"
+                        android:layout_weight="1"
+                        android:id="@+id/activity_main_xue"
+                        android:text="学"
+                        android:textSize="45sp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:textColor="#610d16"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:id="@+id/activity_main_zuo"
+                        android:text="做"
+                        android:textSize="45sp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:textColor="#d09351"
+                        android:layout_weight="1"
+                        android:id="@+id/activity_main_cai"
+                        android:text="菜"
+                        android:textSize="45sp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <EditText
+                    android:hint="菜谱搜索"
+                    android:id="@+id/activity_main_et"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/bg_for_edittext"
+                    android:layout_centerInParent="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:drawableLeft="@drawable/magnifying_glass"/>
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/activity_main_iv_find"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignRight="@id/activity_main_et"
+                    android:background="@drawable/btnsearch_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <GridView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:listSelector="#00000000"
+                    android:id="@+id/activity_main_gradview"
+                    android:numColumns="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </GridView>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <Button
+                    android:id="@+id/activity_main_btn_menu"
+                    android:text="全部菜谱分类"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:clickable="true"
+            android:background="#ffffff"
+            android:layout_gravity="start"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/activity_main_btn_collect"
+                android:text="查看收藏"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+            <Button
+                android:id="@+id/activity_main_btn_look"
+                android:text="查看最近浏览"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

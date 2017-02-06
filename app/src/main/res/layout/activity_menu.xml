@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/activity_menu_top"
+        layout="@layout/top">
+    </include>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/activity_menu_tab"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:tabMaxWidth="140dp"
+        app:tabMinWidth="140dp"
+        app:tabBackground="@drawable/bg_for_tab"
+        app:tabPaddingEnd="2dp"
+        ></android.support.design.widget.TabLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/activity_menu_rv"
+        android:layout_weight="8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

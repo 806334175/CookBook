@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#ffffff">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="39dp">
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="39dp">
+            <TextView
+                android:id="@+id/collect_and_share_name"
+                android:text="123"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/collect_and_share_collect"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="39dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/collect_and_share_collect_iv"
+                android:background="@drawable/cang"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:id="@+id/collect_and_share_collect_tv"
+                android:text="123"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/collect_and_share_share"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="39dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:background="@drawable/share"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:text="分享"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:background="#a40303"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+</LinearLayout>
